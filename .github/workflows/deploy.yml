@@ -1,12 +1,21 @@
 name: Deploy
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 on:
   push:
     branches:
       - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -25,8 +34,15 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Push directory to remote repository or branch
+        uses: cpina/github-action-push-to-another-repository@v1.7.2
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .vitepress/dist
+          source-directory: .vitepress/dist/
+          destination-github-username: WhirlScript
+          destination-repository-name: whirlscript.github.io
+          user-email: 41898282+github-actions[bot]@users.noreply.github.com
+          user-name: github-actions[bot]
+          target-branch: gh-pages
+          create-target-branch-if-needed: true
