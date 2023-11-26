@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: 立即开始
-      link: /zh/guide/getting-started
+      link: /zh/guide/getting-started/getting-started
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/Bluemangoo/WhirlScript
