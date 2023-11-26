@@ -1,4 +1,4 @@
-import { defineConfig, type DefaultTheme } from "vitepress";
+import { defineConfig } from "vitepress";
 import { nav as navEn } from "./locale/en";
 import { nav as navZh } from "./locale/zh";
 import { sidebar as sidebarEn } from "./locale/en";
@@ -15,7 +15,7 @@ export default defineConfig({
             themeConfig: {
                 editLink: {
                     pattern:
-                        "https://github.com/WhirlScript/docs/edit/master/docs/:path",
+                        "https://github.com/WhirlScript/docs/edit/master/:path",
                     text: "Edit this page on GitHub"
                 },
                 nav: navEn(),
@@ -37,7 +37,7 @@ export default defineConfig({
             themeConfig: {
                 editLink: {
                     pattern:
-                        "https://github.com/WhirlScript/docs/edit/master/docs/:path",
+                        "https://github.com/WhirlScript/docs/edit/master/:path",
                     text: "在 GitHub 上编辑此页"
                 },
                 nav: navZh(),
