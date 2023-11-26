@@ -6,8 +6,12 @@ titleTemplate: 下一代脚本语言
 
 hero:
   name: Whirlscript
-  text: 下一代脚本语言
-  tagline: 可读、可维护的代码，编译为干净的 bat 和 sh 脚本。
+  text: |
+    下一代
+    脚本语言
+  tagline: |
+    可读、可维护的代码，
+    编译为干净的 bat 和 sh 脚本。
   actions:
     - theme: brand
       text: 立即开始

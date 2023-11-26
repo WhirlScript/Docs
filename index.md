@@ -6,8 +6,12 @@ titleTemplate: A next generation script language
 
 hero:
   name: Whirlscript
-  text: A next generation script language
-  tagline: Write readable and maintainable codes, compiles to clean bat and sh scripts.
+  text: |
+    A next generation
+    script language
+  tagline: |
+    Write readable and maintainable codes,
+    compiles to clean bat and sh scripts.
   actions:
     - theme: brand
       text: Get Started

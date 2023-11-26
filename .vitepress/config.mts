@@ -1,4 +1,8 @@
 import { defineConfig, type DefaultTheme } from "vitepress";
+import { nav as navEn } from "./locale/en";
+import { nav as navZh } from "./locale/zh";
+import { sidebar as sidebarEn } from "./locale/en";
+import { sidebar as sidebarZh } from "./locale/zh";
 
 export default defineConfig({
     locales: {
@@ -7,7 +11,21 @@ export default defineConfig({
             lang: "en",
             title: "WhirlsScript",
             titleTemplate: "WhirlScript Docs",
-            description: "A next generation script language"
+            description: "A next generation script language",
+            themeConfig: {
+                editLink: {
+                    pattern:
+                        "https://github.com/WhirlScript/docs/edit/master/docs/:path",
+                    text: "Edit this page on GitHub"
+                },
+                nav: navEn(),
+                sidebar: {
+                    "/guide/": { base: "/guide/", items: sidebarEn.guide() }
+                }
+            },
+            head: [
+                ["meta", { name: "og:locale", content: "en" }]
+            ]
         },
         zh: {
             label: "简体中文",
@@ -22,12 +40,18 @@ export default defineConfig({
                         "https://github.com/WhirlScript/docs/edit/master/docs/:path",
                     text: "在 GitHub 上编辑此页"
                 },
-                sidebar: sidebarGuideZh()
-            }
+                nav: navZh(),
+                sidebar: {
+                    "/zh/guide/": { base: "/zh/guide/", items: sidebarZh.guide() }
+                }
+            },
+            head: [
+                ["meta", { name: "og:locale", content: "zh" }]
+            ]
         }
     },
 
-    srcExclude:["README.md"],
+    srcExclude: ["README.md"],
 
     lastUpdated: true,
     cleanUrls: true,
@@ -45,7 +69,6 @@ export default defineConfig({
         ["link", { rel: "icon", type: "image/svg+xml", href: "/logo.svg" }],
         ["meta", { name: "theme-color", content: "#4879A8" }],
         ["meta", { name: "og:type", content: "website" }],
-        ["meta", { name: "og:locale", content: "en" }],
         ["meta", { name: "og:site_name", content: "WhirlScript" }]
         // ['meta', { name: 'og:image', content: '' }],
     ],
@@ -53,17 +76,6 @@ export default defineConfig({
     themeConfig: {
         logo: { src: "/logo-large.svg", width: 24, height: 24 },
 
-        nav: nav(),
-
-        sidebar: {
-            "/guide/": { base: "/guide/", items: sidebarGuide() }
-        },
-
-        editLink: {
-            pattern:
-                "https://github.com/WhirlScript/docs/edit/master/docs/:path",
-            text: "Edit this page on GitHub"
-        },
 
         socialLinks: [
             { icon: "github", link: "https://github.com/vuejs/vitepress" }
@@ -75,45 +87,3 @@ export default defineConfig({
         }
     }
 });
-
-function nav(): DefaultTheme.NavItem[] {
-    return [
-        {
-            text: "Guide",
-            link: "/guide/what-is-whirlscript",
-            activeMatch: "/guide/"
-        }
-    ];
-}
-
-function sidebarGuide(): DefaultTheme.SidebarItem[] {
-    return [
-        {
-            text: "Introduction",
-            collapsed: false,
-            items: [
-                {
-                    text: "What is Whirlscript?",
-                    link: "/guide/what-is-whirlscript"
-                },
-                { text: "Getting Started", link: "/guide/getting-started" }
-            ]
-        }
-    ];
-}
-
-function sidebarGuideZh(): DefaultTheme.SidebarItem[] {
-    return [
-        {
-            text: "介绍",
-            collapsed: false,
-            items: [
-                {
-                    text: "什么是 Whirlscript？",
-                    link: "/zh/guide/what-is-whirlscript"
-                },
-                { text: "立即开始", link: "/zh/guide/getting-started" }
-            ]
-        }
-    ];
-}
