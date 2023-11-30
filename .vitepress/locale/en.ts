@@ -6,27 +6,47 @@ export function nav(): DefaultTheme.NavItem[] {
             text: "Guide",
             link: "/guide/introduction/what-is-whirlscript",
             activeMatch: "/guide/"
+        },
+        {
+            text:"Mirror",
+            items:[
+                {
+                    text:"GitHub Pages",
+                    link:"https://whirlscript.github.io"
+                },
+                {
+                    text:"Vercel",
+                    link:"https://whirlscript.vercel.app"
+                }
+            ]
         }
     ];
 }
 
-export const sidebar = {
-    guide(): DefaultTheme.SidebarItem[] {
-        return [
-            {
-                text: "Introduction",
-                collapsed: false,
-                items: [
-                    { text: "What is Whirlscript?", link: "/introduction/what-is-whirlscript" },
-                ]
-            },
-            {
-                text: "Getting Started",
-                collapsed: false,
-                items: [
-                    { text: "Getting Started", link: "/getting-started/getting-started" }
-                ]
-            }
-        ];
+export function sidebar(): DefaultTheme.SidebarMulti {
+    return {
+        "/guide/": {
+            base: "/guide/",
+            items: sidebarGuide()
+        }
     }
-};
+}
+
+function sidebarGuide(): DefaultTheme.SidebarItem[] {
+    return [
+        {
+            text: "Introduction",
+            collapsed: false,
+            items: [
+                { text: "What is Whirlscript?", link: "/introduction/what-is-whirlscript" },
+            ]
+        },
+        {
+            text: "Getting Started",
+            collapsed: false,
+            items: [
+                { text: "Getting Started", link: "/getting-started/getting-started" }
+            ]
+        }
+    ];
+}

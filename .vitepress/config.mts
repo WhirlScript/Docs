@@ -19,9 +19,7 @@ export default defineConfig({
                     text: "Edit this page on GitHub"
                 },
                 nav: navEn(),
-                sidebar: {
-                    "/guide/": { base: "/guide/", items: sidebarEn.guide() }
-                }
+                sidebar: sidebarEn()
             },
             head: [
                 ["meta", { name: "og:locale", content: "en" }]
@@ -41,9 +39,7 @@ export default defineConfig({
                     text: "在 GitHub 上编辑此页"
                 },
                 nav: navZh(),
-                sidebar: {
-                    "/zh/guide/": { base: "/zh/guide/", items: sidebarZh.guide() }
-                }
+                sidebar: sidebarZh()
             },
             head: [
                 ["meta", { name: "og:locale", content: "zh" }]
@@ -76,6 +72,9 @@ export default defineConfig({
     themeConfig: {
         logo: { src: "/logo-large.svg", width: 24, height: 24 },
 
+        search: {
+            provider: "local"
+        },
 
         socialLinks: [
             { icon: "github", link: "https://github.com/vuejs/vitepress" }
