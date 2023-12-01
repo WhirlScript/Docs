@@ -8,7 +8,7 @@ export function nav(): DefaultTheme.NavItem[] {
             activeMatch: "/guide/"
         },
         {
-            text:"Mirror",
+            text:"Mirrors",
             items:[
                 {
                     text:"GitHub Pages",
