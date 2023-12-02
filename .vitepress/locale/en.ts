@@ -8,19 +8,19 @@ export function nav(): DefaultTheme.NavItem[] {
             activeMatch: "/guide/"
         },
         {
-            text:"Mirrors",
-            items:[
+            text: "Mirrors",
+            items: [
                 {
-                    text:"GitHub Pages",
-                    link:"https://whirlscript.github.io"
+                    text: "GitHub Pages",
+                    link: "https://whirlscript.github.io"
                 },
                 {
-                    text:"Vercel",
-                    link:"https://whirlscript.vercel.app"
+                    text: "Vercel",
+                    link: "https://whirlscript.vercel.app"
                 },
                 {
-                    text:"Cloudflare Pages",
-                    link:"https://whirlscript.pages.dev"
+                    text: "Cloudflare Pages",
+                    link: "https://whirlscript.pages.dev"
                 }
             ]
         }
@@ -33,7 +33,7 @@ export function sidebar(): DefaultTheme.SidebarMulti {
             base: "/guide/",
             items: sidebarGuide()
         }
-    }
+    };
 }
 
 function sidebarGuide(): DefaultTheme.SidebarItem[] {
@@ -42,14 +42,20 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             text: "Introduction",
             collapsed: false,
             items: [
-                { text: "What is Whirlscript?", link: "/introduction/what-is-whirlscript" },
+                {
+                    text: "What is Whirlscript?",
+                    link: "/introduction/what-is-whirlscript"
+                }
             ]
         },
         {
             text: "Getting Started",
             collapsed: false,
             items: [
-                { text: "Getting Started", link: "/getting-started/getting-started" }
+                {
+                    text: "Getting Started",
+                    link: "/getting-started/getting-started"
+                }
             ]
         }
     ];

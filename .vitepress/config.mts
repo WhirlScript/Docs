@@ -21,9 +21,7 @@ export default defineConfig({
                 nav: navEn(),
                 sidebar: sidebarEn()
             },
-            head: [
-                ["meta", { name: "og:locale", content: "en" }]
-            ]
+            head: [["meta", { name: "og:locale", content: "en" }]]
         },
         zh: {
             label: "简体中文",
@@ -41,9 +39,7 @@ export default defineConfig({
                 nav: navZh(),
                 sidebar: sidebarZh()
             },
-            head: [
-                ["meta", { name: "og:locale", content: "zh" }]
-            ]
+            head: [["meta", { name: "og:locale", content: "zh" }]]
         }
     },
 
