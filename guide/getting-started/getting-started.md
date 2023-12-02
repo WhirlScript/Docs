@@ -32,7 +32,7 @@ $ wrp init
 ### The Config File
 
 - The file `whirlpool.json` is used to store config for packages;
-- The file `build.json` is used to store config for building.
+- The file `wrsconfig.json` is used to store config for building.
 
 ## Compile
 
