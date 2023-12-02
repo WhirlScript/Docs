@@ -17,6 +17,10 @@ export function nav(): DefaultTheme.NavItem[] {
                 {
                     text:"Vercel",
                     link:"https://whirlscript.vercel.app"
+                },
+                {
+                    text:"Cloudflare Pages",
+                    link:"https://whirlscript.pages.dev"
                 }
             ]
         }
