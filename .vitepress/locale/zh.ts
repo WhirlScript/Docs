@@ -57,6 +57,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 {
                     text: "Hello Whirlpool!",
                     link: "/getting-started/hello-whirlpool"
+                },
+                {
+                    text: "语法和类型",
+                    link: "/getting-started/grammar-and-types"
                 }
             ]
         }
