@@ -3,6 +3,7 @@ import { nav as navEn } from "./locale/en";
 import { nav as navZh } from "./locale/zh";
 import { sidebar as sidebarEn } from "./locale/en";
 import { sidebar as sidebarZh } from "./locale/zh";
+import * as path from "path";
 
 export default defineConfig({
     locales: {
@@ -49,7 +50,14 @@ export default defineConfig({
     cleanUrls: true,
 
     markdown: {
-        math: true
+        math: true,
+        languages: [{
+            id: "whirlscript",
+            scopeName: "source.whirlscript",
+            displayName: "WhirlScript",
+            aliases: ["wrs"],
+            path: path.resolve(__dirname, "extension/languages/whirlscript.tmLanguage.json")
+        }]
     },
 
     sitemap: {
