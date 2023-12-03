@@ -1,4 +1,12 @@
-# Hello WhirlScript!
+---
+prev:
+    text: 立即开始
+    link: /zh/guide/getting-started/getting-started
+next: 
+    text: Hello Whirlpool!
+    link: /zh/guide/getting-started/hello-whirlpool
+---
+# Hello World!
 
 现在我想你已经安装完 WhirlScript。
 

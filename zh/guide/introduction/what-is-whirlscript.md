@@ -1,3 +1,10 @@
+---
+prev: false
+next: 
+    text: 立即开始
+    link: /zh/guide/getting-started/getting-started
+---
+
 # 什么是 WhirlScript？
 
 WhirlScript 是一种编译为 bat 和 sh 脚本的语言。

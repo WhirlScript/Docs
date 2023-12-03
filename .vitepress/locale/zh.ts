@@ -61,6 +61,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 {
                     text: "语法和类型",
                     link: "/getting-started/grammar-and-types"
+                },
+                {
+                    text: "流程控制",
+                    link: "/getting-started/control-flow"
                 }
             ]
         }

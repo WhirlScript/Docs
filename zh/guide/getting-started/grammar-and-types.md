@@ -1,3 +1,11 @@
+---
+prev:
+    text: Hello Whirlpool!
+    link: /zh/guide/getting-started/hello-whirlpool
+next: 
+    text: 流程控制
+    link: /zh/guide/getting-started/control-flow
+---
 # 语法和数据类型
 
 在这一节中，我们将讨论 WhirlScript 的基本语法和变量声明。

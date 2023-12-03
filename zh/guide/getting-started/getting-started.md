@@ -1,3 +1,11 @@
+---
+prev:
+    text: 什么是 WhirlScript？
+    link: /zh/guide/introduction/what-is-whirlscript
+next: 
+    text: Hello World!
+    link: /zh/guide/getting-started/hello-world
+---
 # 立即开始
 
 ## 安装
