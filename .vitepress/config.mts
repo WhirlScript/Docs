@@ -46,7 +46,7 @@ export default defineConfig({
 
     srcExclude: ["README.md"],
 
-    lastUpdated: true,
+    lastUpdated: false,
     cleanUrls: true,
 
     markdown: {
