@@ -14,7 +14,7 @@ next:
 
 WhirlScript 是区分大小写的，并且使用 UNICODE 字符集。
 
-在 WhirlScript 中，指令被称为语句，并用分号（;）进行分隔。
+在 WhirlScript 中，指令被称为语句，并用分号`;`进行分隔。
 
 ## 注释
 

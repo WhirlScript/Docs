@@ -14,7 +14,7 @@ In this section, we will discuss the basic syntax and variable declarations of W
 
 WhirlScript is case-sensitive and uses the UNICODE character set.
 
-In WhirlScript, instructions are called statements and are separated by semicolons (;).
+In WhirlScript, instructions are called statements and are separated by semicolons `;`.
 
 ## Comments
 
