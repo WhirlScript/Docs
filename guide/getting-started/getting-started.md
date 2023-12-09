@@ -1,3 +1,11 @@
+---
+prev:
+    text: What is WhirlScript?
+    link: /guide/introduction/what-is-whirlscript
+next:
+    text: Hello World!
+    link: /guide/getting-started/hello-world
+---
 # Getting Started
 
 ## Installation
@@ -5,7 +13,7 @@
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) version 18 or higher.
-- Terminal for accessing WhirlScript via its command line interface (CLI).
+- A terminal for accessing WhirlScript through its Command Line Interface (CLI).
 
 ::: code-group
 
@@ -21,24 +29,23 @@ $ pnpm add -g whirlscript
 $ yarn global add whirlscript
 ```
 
-### Setup Wizard
+### Setup Guide
 
-WhirlScript use its package manager `WhirlPool`.
+WhirlScript uses its package manager `WhirlPool`.
 
 ```sh [npm]
 $ wrp init
 ```
 
-### The Config File
+### Configuration Files
 
-- The file `whirlpool.json` is used to store config for packages;
-- The file `wrsconfig.json` is used to store config for building.
+- The `whirlpool.json` file is used to store the package configuration;
+- The `wrsconfig.json` file is used to store the build configuration.
 
-## Compile
+## Compilation
 
-As long as you completed your config, you can compile your source code like:
+Once you have completed your configuration, you can compile your source code like this:
 
 ```sh [npm]
 $ wrsc
 ```
-
