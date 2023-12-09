@@ -52,9 +52,19 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             text: "Getting Started",
             collapsed: false,
             items: [
+                { text: "Getting Started", link: "/getting-started/getting-started" },
+                { text: "Hello World!", link: "/getting-started/hello-world" },
                 {
-                    text: "Getting Started",
-                    link: "/getting-started/getting-started"
+                    text: "Hello Whirlpool!",
+                    link: "/getting-started/hello-whirlpool"
+                },
+                {
+                    text: "Grammar and Data Types",
+                    link: "/getting-started/grammar-and-types"
+                },
+                {
+                    text: "Control Flow",
+                    link: "/getting-started/control-flow"
                 }
             ]
         }
