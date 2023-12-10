@@ -65,6 +65,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 {
                     text: "流程控制",
                     link: "/getting-started/control-flow"
+                },
+                {
+                    text: "函数",
+                    link: "/getting-started/function"
                 }
             ]
         }

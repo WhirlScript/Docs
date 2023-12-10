@@ -2,9 +2,9 @@
 prev:
     text: 语法和数据类型
     link: /zh/guide/getting-started/grammar-and-types
-next: false
-    # text: 语法和数据类型
-    # link: /zh/guide/getting-started/grammar-and-types
+next:
+    text: 函数
+    link: /zh/guide/getting-started/function
 ---
 # 流程控制
 
