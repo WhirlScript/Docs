@@ -21,6 +21,10 @@ export function nav(): DefaultTheme.NavItem[] {
                 {
                     text: "Cloudflare Pages",
                     link: "https://whirlscript.pages.dev"
+                },
+                {
+                    text: "Zeabur (Beta)",
+                    link: "https://whirlscript.zeabur.app/"
                 }
             ]
         }
