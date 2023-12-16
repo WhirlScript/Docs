@@ -2,9 +2,9 @@
 prev:
     text: 流程控制
     link: /zh/guide/getting-started/control-flow
-next: false
-    # text: 函数
-    # link: /zh/guide/getting-started/function
+next:
+    text: 函数
+    link: /zh/guide/getting-started/expressions-and-operators
 ---
 # 函数
 

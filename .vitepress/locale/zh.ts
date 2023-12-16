@@ -73,6 +73,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 {
                     text: "函数",
                     link: "/getting-started/function"
+                },
+                {
+                    text: "表达式与运算符",
+                    link: "/getting-started/expressions-and-operators"
                 }
             ]
         }
