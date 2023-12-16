@@ -29,11 +29,13 @@ $ pnpm add -g whirlscript
 $ yarn global add whirlscript
 ```
 
+:::
+
 ### 设置向导
 
 WhirlScript 使用其包管理器 `WhirlPool`。
 
-```sh [npm]
+```shell
 $ wrp init
 ```
 
@@ -46,6 +48,6 @@ $ wrp init
 
 只要完成了配置，就可以像下面这样编译你的源代码：
 
-```sh [npm]
+```shell
 $ wrsc
 ```

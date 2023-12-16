@@ -29,11 +29,13 @@ $ pnpm add -g whirlscript
 $ yarn global add whirlscript
 ```
 
+:::
+
 ### Setup Guide
 
 WhirlScript uses its package manager `WhirlPool`.
 
-```sh [npm]
+```shell
 $ wrp init
 ```
 
@@ -46,6 +48,6 @@ $ wrp init
 
 Once you have completed your configuration, you can compile your source code like this:
 
-```sh [npm]
+```shell
 $ wrsc
 ```
