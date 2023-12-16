@@ -192,6 +192,6 @@ The compiler will not check whether your conversion is legal. Please use it **ca
 
 ## Literals
 
-In WhirlSCript, you can use various literals. These literals are fixed values given in the script literally, not variables.
+In WhirlScript, you can use various literals. These literals are fixed values given in the script literally, not variables.
 
 For example `1`, `true`, `"str"`.
