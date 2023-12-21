@@ -44,7 +44,7 @@ function add(x:int, y:int):int {
 - 名称。
 - 参数类型。
 
-::: warning
+::: warning ⚠️ 警告
 字面值也属于编译期常量。
 :::
 
