@@ -83,6 +83,10 @@ const sidebarItem = {
                 {
                     text: "表达式与运算符",
                     link: "/getting-started/expressions-and-operators"
+                },
+                {
+                    text: "命名空间",
+                    link: "/getting-started/namespace"
                 }
             ]
         };

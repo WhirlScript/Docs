@@ -3,9 +3,8 @@ prev:
     text: 函数
     link: /zh/guide/getting-started/function
 next:
-    false
-    # text: 表达式与运算符
-    # link: /zh/guide/getting-started/expressions-and-operators
+    text: 命名空间
+    link: /zh/guide/getting-started/namespace
 ---
 
 # 表达式与运算符
