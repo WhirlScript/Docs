@@ -20,7 +20,7 @@ $ wrp add hello
 
 Wait for the installation to finish.
 
-You can see that there is an additional folder `wrs_packages` in the project directory, which contains all the packages you have installed.
+You can see that there is an additional folder `wrs_modules` in the project directory, which contains all the packages you have installed.
 
 If you want to use version management (such as Git) to manage WhirlScript projects, it is best to add this folder to the ignore list.
 
