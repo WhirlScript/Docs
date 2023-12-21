@@ -34,10 +34,19 @@ export function nav(): DefaultTheme.NavItem[] {
 export function sidebar(): DefaultTheme.SidebarMulti {
     return {
         "/zh/guide/": {
-            base: "/zh/guide/",
+            base: "/zh/",
             items: [
                 sidebarItem.introduction(false),
-                sidebarItem.gettingStarted(false)
+                sidebarItem.gettingStarted(false),
+                sidebarItem.reference(true)
+            ]
+        },
+        "/zh/reference/std/": {
+            base: "/zh/",
+            items: [
+                sidebarItem.introduction(true),
+                sidebarItem.gettingStarted(true),
+                sidebarItem.reference(false, false)
             ]
         }
     };
@@ -51,7 +60,7 @@ const sidebarItem = {
             items: [
                 {
                     text: "什么是 Whirlscript？",
-                    link: "/introduction/what-is-whirlscript"
+                    link: "/guide/introduction/what-is-whirlscript"
                 }
             ]
         };
@@ -62,37 +71,62 @@ const sidebarItem = {
             text: "立即开始",
             collapsed,
             items: [
-                { text: "立即开始", link: "/getting-started/getting-started" },
-                { text: "Hello World!", link: "/getting-started/hello-world" },
+                {
+                    text: "立即开始",
+                    link: "/guide/getting-started/getting-started"
+                },
+                {
+                    text: "Hello World!",
+                    link: "/guide/getting-started/hello-world"
+                },
                 {
                     text: "Hello Whirlpool!",
-                    link: "/getting-started/hello-whirlpool"
+                    link: "/guide/getting-started/hello-whirlpool"
                 },
                 {
                     text: "语法和类型",
-                    link: "/getting-started/grammar-and-types"
+                    link: "/guide/getting-started/grammar-and-types"
                 },
                 {
                     text: "流程控制",
-                    link: "/getting-started/control-flow"
+                    link: "/guide/getting-started/control-flow"
                 },
                 {
                     text: "函数",
-                    link: "/getting-started/function"
+                    link: "/guide/getting-started/function"
                 },
                 {
                     text: "表达式与运算符",
-                    link: "/getting-started/expressions-and-operators"
+                    link: "/guide/getting-started/expressions-and-operators"
                 },
                 {
                     text: "命名空间",
-                    link: "/getting-started/namespace"
+                    link: "/guide/getting-started/namespace"
                 },
                 {
                     text: "模块",
-                    link: "/getting-started/modules"
+                    link: "/guide/getting-started/modules"
                 }
             ]
+        };
+    },
+
+    reference(
+        collapsed: boolean,
+        std: boolean = true
+    ): DefaultTheme.SidebarItem {
+        return {
+            text: "参考",
+            collapsed,
+            items: [this.referenceStd(std)]
+        };
+    },
+
+    referenceStd(collapsed: boolean): DefaultTheme.SidebarItem {
+        return {
+            text: "标准库",
+            collapsed,
+            items: [{ text: "print()", link: "/reference/std/print" }]
         };
     }
 };

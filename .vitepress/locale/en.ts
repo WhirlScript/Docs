@@ -33,8 +33,8 @@ export function nav(): DefaultTheme.NavItem[] {
 
 export function sidebar(): DefaultTheme.SidebarMulti {
     return {
-        "/zh/guide/": {
-            base: "/zh/guide/",
+        "/guide/": {
+            base: "/",
             items: [
                 sidebarItem.introduction(false),
                 sidebarItem.gettingStarted(false)
@@ -51,7 +51,7 @@ const sidebarItem = {
             items: [
                 {
                     text: "What is Whirlscript?",
-                    link: "/introduction/what-is-whirlscript"
+                    link: "/guide/introduction/what-is-whirlscript"
                 }
             ]
         };
@@ -62,19 +62,19 @@ const sidebarItem = {
             text: "Getting Started",
             collapsed,
             items: [
-                { text: "Getting Started", link: "/getting-started/getting-started" },
-                { text: "Hello World!", link: "/getting-started/hello-world" },
+                { text: "Getting Started", link: "/guide/getting-started/getting-started" },
+                { text: "Hello World!", link: "/guide/getting-started/hello-world" },
                 {
                     text: "Hello Whirlpool!",
-                    link: "/getting-started/hello-whirlpool"
+                    link: "/guide/getting-started/hello-whirlpool"
                 },
                 {
                     text: "Grammar and Data Types",
-                    link: "/getting-started/grammar-and-types"
+                    link: "/guide/getting-started/grammar-and-types"
                 },
                 {
                     text: "Control Flow",
-                    link: "/getting-started/control-flow"
+                    link: "/guide/getting-started/control-flow"
                 }
             ]
         };
