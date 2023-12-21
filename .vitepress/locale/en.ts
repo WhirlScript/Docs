@@ -24,7 +24,7 @@ export function nav(): DefaultTheme.NavItem[] {
                 },
                 {
                     text: "Zeabur (Beta)",
-                    link: "https://whirlscript.zeabur.app/"
+                    link: "https://whirlscript.zeabur.app"
                 }
             ]
         }
