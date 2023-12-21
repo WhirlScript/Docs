@@ -87,6 +87,10 @@ const sidebarItem = {
                 {
                     text: "命名空间",
                     link: "/getting-started/namespace"
+                },
+                {
+                    text: "模块",
+                    link: "/getting-started/modules"
                 }
             ]
         };
