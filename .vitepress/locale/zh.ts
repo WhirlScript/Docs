@@ -35,26 +35,32 @@ export function sidebar(): DefaultTheme.SidebarMulti {
     return {
         "/zh/guide/": {
             base: "/zh/guide/",
-            items: sidebarGuide()
+            items: [
+                sidebarItem.introduction(false),
+                sidebarItem.gettingStarted(false)
+            ]
         }
     };
 }
 
-function sidebarGuide(): DefaultTheme.SidebarItem[] {
-    return [
-        {
+const sidebarItem = {
+    introduction(collapsed: boolean): DefaultTheme.SidebarItem {
+        return {
             text: "介绍",
-            collapsed: false,
+            collapsed,
             items: [
                 {
                     text: "什么是 Whirlscript？",
                     link: "/introduction/what-is-whirlscript"
                 }
             ]
-        },
-        {
+        };
+    },
+
+    gettingStarted(collapsed: boolean): DefaultTheme.SidebarItem {
+        return {
             text: "立即开始",
-            collapsed: false,
+            collapsed,
             items: [
                 { text: "立即开始", link: "/getting-started/getting-started" },
                 { text: "Hello World!", link: "/getting-started/hello-world" },
@@ -79,6 +85,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                     link: "/getting-started/expressions-and-operators"
                 }
             ]
-        }
-    ];
-}
+        };
+    }
+};

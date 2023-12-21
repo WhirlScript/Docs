@@ -33,28 +33,34 @@ export function nav(): DefaultTheme.NavItem[] {
 
 export function sidebar(): DefaultTheme.SidebarMulti {
     return {
-        "/guide/": {
-            base: "/guide/",
-            items: sidebarGuide()
+        "/zh/guide/": {
+            base: "/zh/guide/",
+            items: [
+                sidebarItem.introduction(false),
+                sidebarItem.gettingStarted(false)
+            ]
         }
     };
 }
 
-function sidebarGuide(): DefaultTheme.SidebarItem[] {
-    return [
-        {
+const sidebarItem = {
+    introduction(collapsed: boolean): DefaultTheme.SidebarItem {
+        return {
             text: "Introduction",
-            collapsed: false,
+            collapsed,
             items: [
                 {
                     text: "What is Whirlscript?",
                     link: "/introduction/what-is-whirlscript"
                 }
             ]
-        },
-        {
+        };
+    },
+
+    gettingStarted(collapsed: boolean): DefaultTheme.SidebarItem {
+        return {
             text: "Getting Started",
-            collapsed: false,
+            collapsed,
             items: [
                 { text: "Getting Started", link: "/getting-started/getting-started" },
                 { text: "Hello World!", link: "/getting-started/hello-world" },
@@ -71,6 +77,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                     link: "/getting-started/control-flow"
                 }
             ]
-        }
-    ];
-}
+        };
+    }
+};
