@@ -31,7 +31,7 @@ Are you afraid that the dependencies installed by your peers will have subtle di
 Go back to the `main.wrs` file we created earlier and change it to:
 
 ```whirlscript
-#import("hello");
+#import "hello";
 
 hello();
 ```
