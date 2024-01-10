@@ -2,7 +2,9 @@
 prev:
     text: Grammar and Data Types
     link: /guide/getting-started/grammar-and-types
-next: false
+next:
+    text: Function
+    link: /guide/getting-started/function
 ---
 
 # Control Flow
