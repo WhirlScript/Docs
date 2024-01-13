@@ -106,6 +106,14 @@ const sidebarItem = {
                 {
                     text: "模块",
                     link: "/guide/getting-started/modules"
+                },
+                {
+                    text: "目标限定",
+                    link: "/guide/getting-started/target-specify"
+                },
+                {
+                    text: "注解",
+                    link: "/guide/getting-started/annotation"
                 }
             ]
         };

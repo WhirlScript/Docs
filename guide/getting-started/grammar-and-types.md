@@ -98,12 +98,16 @@ For variables declared with the `var` statement, if no initial value is assigned
 
 Accessing an undeclared variable will cause an error.
 
-### Global Variables
+### Final Variables
 
-You can use the `global` statement to declare a global quantity:
+You can use the `@final` annotation to declare a final quantity or a function:
 
 ```whirlscript
-global var g:string = "This is a global variable"; // Declare a global variable
+@final var g:string = "This is a final variable"; // Declare a final variable
+
+:::warning ⚠️ Warning
+You can only declare a runtime quantity as a final quantity. The same as function.
+:::
 
 bat rawln("echo %g%");  // Output g in bat.
 sh rawln("echo $g");    // Output g in sh.
@@ -115,7 +119,7 @@ rawln(`echo ${g}`);   // This does not need to judge the syntax environment, it 
 println(g); The built-in println function.
 ```
 
-Global quantities will not be modified identifiers after compilation. That is to say, you can directly call it in `raw` statements. But we recommend using template syntax to directly splice commands.
+Final quantities will not be modified identifiers after compilation. That is to say, you can directly call it in `raw` statements. But we recommend using template syntax to directly splice commands.
 
 ### Constants
 

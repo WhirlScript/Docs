@@ -2,9 +2,9 @@
 prev:
     text: 命名空间
     link: /zh/guide/getting-started/namespace
-next: false
-    # text: 模块
-    # link: /zh/guide/getting-started/modules
+next:
+    text: 目标限定符
+    link: /zh/guide/getting-started/target-specifier
 ---
 
 # 模块
