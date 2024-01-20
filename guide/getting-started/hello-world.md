@@ -3,8 +3,8 @@ prev:
   text: Getting Started
   link: /guide/getting-started/getting-started
 next:
-  text: Hello Whirlpool!
-  link: /guide/getting-started/hello-whirlpool
+  text: Hello WhirlPKG!
+  link: /guide/getting-started/hello-whirlpkg
 ---
 # Hello World!
 

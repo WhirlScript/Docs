@@ -1,7 +1,7 @@
 ---
 prev:
-  text: Hello Whirlpool!
-  link: /guide/getting-started/hello-whirlpool
+  text: Hello WhirlPKG!
+  link: /guide/getting-started/hello-whirlpkg
 next:
   text: Control Flow
   link: /guide/getting-started/control-flow

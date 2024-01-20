@@ -80,8 +80,8 @@ const sidebarItem = {
                     link: "/guide/getting-started/hello-world"
                 },
                 {
-                    text: "Hello Whirlpool!",
-                    link: "/guide/getting-started/hello-whirlpool"
+                    text: "Hello WhirlPKG!",
+                    link: "/guide/getting-started/hello-whirlpkg"
                 },
                 {
                     text: "语法和类型",

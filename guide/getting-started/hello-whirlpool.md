@@ -6,9 +6,9 @@ next:
   text: Grammar and Data Types
   link: /guide/getting-started/grammar-and-types
 ---
-# Hello Whirlpool!
+# Hello WhirlPKG!
 
-Next, let's learn about the package manager `Whirlpool`.
+Next, let's learn about the package manager `WhirlPKG`.
 
 ## Installing Packages
 
@@ -24,7 +24,7 @@ You can see that there is an additional folder `wrs_modules` in the project dire
 
 If you want to use version management (such as Git) to manage WhirlScript projects, it is best to add this folder to the ignore list.
 
-Are you afraid that the dependencies installed by your peers will have subtle differences from what you installed? Don't worry, there is `whirlpool-lock.json`! It can ensure that the packages you install are exactly the same.
+Are you afraid that the dependencies installed by your peers will have subtle differences from what you installed? Don't worry, there is `whirlpkg.lock`! It can ensure that the packages you install are exactly the same.
 
 ## Importing Dependencies
 

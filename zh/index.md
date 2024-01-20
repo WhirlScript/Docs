@@ -36,7 +36,7 @@ features:
     details: 只需写一份代码，即可编译为全平台的脚本。
   - icon: 📦
     title: 包管理器支持
-    details: 支持 Whirlpool 包。可以更轻松地找到和使用已有的轮子。
+    details: 支持 WhirlPKG 包。可以更轻松地找到和使用已有的轮子。
 ---
 
 <style>

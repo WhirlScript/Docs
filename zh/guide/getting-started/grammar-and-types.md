@@ -1,7 +1,7 @@
 ---
 prev:
-    text: Hello Whirlpool!
-    link: /zh/guide/getting-started/hello-whirlpool
+    text: Hello WhirlPKG!
+    link: /zh/guide/getting-started/hello-whirlpkg
 next: 
     text: 流程控制
     link: /zh/guide/getting-started/control-flow

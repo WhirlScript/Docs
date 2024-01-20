@@ -33,7 +33,7 @@ $ yarn global add whirlscript
 
 ### Setup Guide
 
-WhirlScript uses its package manager `WhirlPool`.
+WhirlScript uses its package manager `WhirlPKG`.
 
 ```shell
 $ wrp init
@@ -41,7 +41,7 @@ $ wrp init
 
 ### Configuration Files
 
-- The `whirlpool.json` file is used to store the package configuration;
+- The `whirlpkg.json` file is used to store the package configuration;
 - The `wrsconfig.json` file is used to store the build configuration.
 
 ## Compilation

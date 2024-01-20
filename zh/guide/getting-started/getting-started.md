@@ -40,7 +40,7 @@ $ wrp init
 ```
 
 ### 配置文件
-- 文件 whirlpool.json 用于存储包的配置；
+- 文件 whirlpkg.json 用于存储包的配置；
 - 文件 wrsconfig.json 用于存储构建的配置。
 
 

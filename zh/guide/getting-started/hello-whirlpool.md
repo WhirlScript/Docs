@@ -6,9 +6,9 @@ next:
     text: 语法和数据类型
     link: /zh/guide/getting-started/grammar-and-types
 ---
-# Hello Whirlpool!
+# Hello WhirlPKG!
 
-接下来让我们了解下包管理器 `Whirlpool`。
+接下来让我们了解下包管理器 `WhirlPKG`。
 
 ## 安装包
 
@@ -24,7 +24,7 @@ $ wrp add hello
 
 如果你要使用版本管理（比如 Git）来管理 WhirlScript 项目的话，最好把这个文件夹添加到忽略列表中。
 
-害怕同伴安装的依赖和你安装的有细微差别？别怕，还有 `whirlpool-lock.json` 呢！它可以保证你们安装的包是一模一样的。
+害怕同伴安装的依赖和你安装的有细微差别？别怕，还有 `whirlpkg.lock` 呢！它可以保证你们安装的包是一模一样的。
 
 ## 引入依赖
 

@@ -31,9 +31,9 @@ WhirlScript 程序可以被拆分为多个按需导入的单独模块。这也�
 
 重复导入是安全的。第二次导入同一个模块会被忽略。
 
-## 导入 Whirlpool 包
+## 导入 Whirl 包
 
-Whirlpool 提供了各种第三方包。你可以通过 `$ wrp add $pkg` 安装到当前项目，然后使用 `#import` 语句导入：
+WhirlPKG 提供了各种第三方包。你可以通过 `$ wrp add $pkg` 安装到当前项目，然后使用 `#import` 语句导入：
 
 ```WhirlScript
 #import "hello";
