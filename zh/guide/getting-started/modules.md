@@ -4,7 +4,7 @@ prev:
     link: /zh/guide/getting-started/namespace
 next:
     text: 目标限定符
-    link: /zh/guide/getting-started/target-specifier
+    link: /zh/guide/getting-started/target-specify
 ---
 
 # 模块
