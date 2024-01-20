@@ -46,12 +46,12 @@ WhirlScript 的量有四种状态：
 
 ::: code-group
 ```WhirlScript [运行时变量]
-var v:int = 1;
+var v: int = 1;
 ```
 
 
 ```WhirlScript [运行时常量]
-const v:int = 1;
+const v: int = 1;
 ```
 :::
 
@@ -59,12 +59,12 @@ const v:int = 1;
 
 ::: code-group
 ```WhirlScript [编译期变量]
-macro var v:int = 1;
+macro var v: int = 1;
 ```
 
 
 ```WhirlScript [编译期常量]
-macro const v:int = 1;
+macro const v: int = 1;
 ```
 :::
 
@@ -96,18 +96,18 @@ macro const v:int = 1;
 你可以通过这种方式声明一个变量：
 
 ```whirlscript
-var num:int = 1;
+var num: int = 1;
 ```
 
-其中，`var` 标识声明的是一个运行时变量，`num` 为变量的标识符，`:int` 标识变量类型为 `int`，`= 1` 将此变量初始化为一个值（在这里为 `1`）。
+其中，`var` 标识声明的是一个运行时变量，`num` 为变量的标识符，`: int` 标识变量类型为 `int`，`= 1` 将此变量初始化为一个值（在这里为 `1`）。
 
 如果包含了初始化，那么变量类型是可省的（由编译器推断）。
 
 在一些情况下，你必须要标明类型才可能得到你想要的结果：
 
 ```whirlscript
-var aNum:int = 1;
-var aString:string = aNum;  // 得到 "1"。
+var aNum: int = 1;
+var aString: string = aNum;  // 得到 "1"。
 ```
 
 这会在[数据类型的转换](#数据类型的转换)中提到。
@@ -131,7 +131,7 @@ var aString:string = aNum;  // 得到 "1"。
 注解相关内容详见 [注解](/zh/guide/getting-started/annotation) 。
 
 ```whirlscript
-@final var g:string = "这是一个最终变量"; // 声明一个最终变量
+@final var g: string = "这是一个最终变量"; // 声明一个最终变量
 
 bat rawln("echo %g%");  // 在 bat 中输出 g。
 sh rawln("echo $g");    // 在 sh 中输出 g。
@@ -183,7 +183,7 @@ WhirlScript 是静态类型的，这意味着变量的类型是不可变的。
 例如，你不能通过这种方式给 `int` 类型变量赋一个 `string` 值：
 
 ```whirlscript
-var n:int = 12;
+var n: int = 12;
 n = "string";   // 报错！
 ```
 
@@ -192,7 +192,7 @@ n = "string";   // 报错！
 在这种情况下并不会报错：
 
 ```whirlscript
-var s:string = "string";
+var s: string = "string";
 s = 12;
 ```
 
@@ -221,7 +221,7 @@ s = 12;
 类型断言使用 `<>` 来标识，比如：
 
 ```whirlscript
-var n:int = <int>"123";
+var n: int = <int>"123";
 ```
 
 编译器不会检查你的转换是否合法。请**谨慎**使用。

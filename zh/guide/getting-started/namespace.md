@@ -17,7 +17,7 @@ WhirlScript 没有类的概念。作为替代，如果你希望将变量和函�
 
 ```WhirlScript
 namespace Math{
-    function max(x:int, y:int):int {
+    function max(x: int, y: int): int {
         if(x >= y){
             return x;
         }
@@ -39,7 +39,7 @@ println(Math::max(1, 2));// 2
 `::` 符号同样可以用于补充定义命名空间中的内容。
 
 ```WhirlScript
-function Math::min(x:int, y:int):int {
+function Math::min(x: int, y: int): int {
     if(x >= y){
         return x;
     }

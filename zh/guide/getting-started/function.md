@@ -24,7 +24,7 @@ WhirlScript 的函数分为两种：普通函数和宏函数。
 例如，以下的代码定义了一个名为 `add` 的函数：
 
 ```whirlscript
-function add(x:int, y:int):int {
+function add(x: int, y: int): int {
     return x + y;
 }
 ```
@@ -51,7 +51,7 @@ function add(x:int, y:int):int {
 比如，这个函数接受一个宏变量：
 
 ```whirlscript
-function f(var macro x:int):int {
+function f(var macro x: int): int {
     // ...
 }
 ```
@@ -71,7 +71,7 @@ add(1, 2);
 函数可以调用其本身。例如，下面这个函数就是用递归计算阶乘：
 
 ```whirlscript
-function factorial(n:int):int {
+function factorial(n: int): int {
   if (n == 0 || n == 1) {
     return 1;
   } else {
@@ -96,7 +96,7 @@ WhirlScript 并不支持动态创建函数，因此所有的函数调用都会�
 
 ```whirlscript
 function outer() {
-    var x:int = 1;
+    var x: int = 1;
     function inner(){
         x++;
     }
@@ -110,7 +110,7 @@ function outer() {
 在 WhirlScript 中，你可以给函数提供默认参数：
 
 ```whirlscript
-function multiple(a, b = 1):int {
+function multiple(a, b = 1): int {
     return a * b;
 }
 

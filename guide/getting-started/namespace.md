@@ -17,7 +17,7 @@ You can use the `namespace` statement to define a namespace. For example, the fo
 
 ```WhirlScript
 namespace Math{
-    function max(x:int, y:int):int {
+    function max(x: int, y: int): int {
         if(x >= y){
             return x;
         }
@@ -39,7 +39,7 @@ println(Math::max(1, 2));// 2
 The `::` symbol can also be used to supplementally define contents within a namespace.
 
 ```WhirlScript
-function Math::min(x:int, y:int):int {
+function Math::min(x: int, y: int): int {
     if(x >= y){
         return x;
     }

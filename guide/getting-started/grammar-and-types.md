@@ -46,12 +46,12 @@ Runtime quantities can be declared with keywords `var` and `const`:
 
 ::: code-group
 ```WhirlScript [Runtime variables]
-var v:int = 1;
+var v: int = 1;
 ```
 
 
 ```WhirlScript [Runtime constants]
-const v:int = 1;
+const v: int = 1;
 ```
 :::
 
@@ -59,12 +59,12 @@ For compile-time quantities, you need to add keyword `macro`.
 
 ::: code-group
 ```WhirlScript [Compile-time variables]
-macro var v:int = 1;
+macro var v: int = 1;
 ```
 
 
 ```WhirlScript [Compile-time constants]
-macro const v:int = 1;
+macro const v: int = 1;
 ```
 :::
 
@@ -96,18 +96,18 @@ Examples of legal identifiers: `Number_hits`, `temp99`.
 You can declare a variable in this way:
 
 ```whirlscript
-var num:int = 1;
+var num: int = 1;
 ```
 
-Where `var` indicates that a runtime variable is declared, `num` is the identifier of the variable, `:int` indicates that the variable type is `int`, and `= 1` initializes this variable to a value (here it is `1`).
+Where `var` indicates that a runtime variable is declared, `num` is the identifier of the variable, `: int` indicates that the variable type is `int`, and `= 1` initializes this variable to a value (here it is `1`).
 
 If initialization is included, the variable type is optional (inferred by the compiler).
 
 In some cases, you must specify the type to get the result you want:
 
 ```whirlscript
-var aNum:int = 1;
-var aString:string = aNum;  // Get "1".
+var aNum: int = 1;
+var aString: string = aNum;  // Get "1".
 ```
 
 This will be mentioned in [Conversion of Data Types](#conversion-of-data-types).
@@ -125,7 +125,7 @@ Accessing an undeclared variable will cause an error.
 You can use the `@final` annotation to declare a final quantity or a function:
 
 ```whirlscript
-@final var g:string = "This is a final variable"; // Declare a final variable
+@final var g: string = "This is a final variable"; // Declare a final variable
 
 :::warning ⚠️ Warning
 You can only declare a runtime quantity as a final quantity. The same as function.
@@ -181,7 +181,7 @@ WhirlScript is statically typed, which means that the type of a variable is immu
 For example, you cannot assign a `string` value to an `int` type variable in this way:
 
 ```whirlscript
-var n:int = 12;
+var n: int = 12;
 n = "string";   // Error!
 ```
 
@@ -190,7 +190,7 @@ n = "string";   // Error!
 In this case, there will be no error:
 
 ```whirlscript
-var s:string = "string";
+var s: string = "string";
 s = 12;
 ```
 
@@ -219,7 +219,7 @@ If you need to convert in reverse, you need type assertion. The premise is that 
 Type assertion is marked with `<>`, for example:
 
 ```whirlscript
-var n:int = <int>"123";
+var n: int = <int>"123";
 ```
 
 The compiler will not check whether your conversion is legal. Please use it **cautiously**.

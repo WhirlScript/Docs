@@ -25,7 +25,7 @@ The parameters in the parameter list need to define the type simultaneously.
 For example, the following code defines a function named `add`:
 
 ```whirlscript
-function add(x:int, y:int):int {
+function add(x: int, y: int): int {
     return x + y;
 }
 ```
@@ -52,7 +52,7 @@ Literal values are also compile-time constants.
 For example, this function accepts a macro variable:
 
 ```whirlscript
-function f(var macro x:int):int {
+function f(var macro x: int): int {
     // ...
 }
 ```
@@ -72,7 +72,7 @@ The above statement calls the function with the parameters `1` and `2`. The func
 Functions can call themselves. For example, the following function calculates the factorial using recursion:
 
 ```whirlscript
-function factorial(n:int):int {
+function factorial(n: int): int {
   if (n == 0 || n == 1) {
     return 1;
   } else {
@@ -97,7 +97,7 @@ In internal functions, you can call all variables that can be accessed at the de
 
 ```whirlscript
 function outer() {
-    var x:int = 1;
+    var x: int = 1;
     function inner(){
         x++;
     }
@@ -111,7 +111,7 @@ function outer() {
 In WhirlScript, you can provide default parameters for functions:
 
 ```whirlscript
-function multiple(a, b = 1):int {
+function multiple(a, b = 1): int {
     return a * b;
 }
 

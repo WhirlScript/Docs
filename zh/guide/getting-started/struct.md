@@ -19,8 +19,8 @@ next:
 
 ```WhirlScript
 struct MyStruct {
-    number:int,
-    used:boolean
+    number: int,
+    used: boolean
 }
 ```
 
@@ -29,21 +29,21 @@ struct MyStruct {
 ::: code-group
 ```WhirlScript [直接嵌套]
 struct MyStruct {
-    id:int,
-    next:MyStruct // [!code error]
+    id: int,
+    next: MyStruct // [!code error]
 }
 ```
 
 
 ```WhirlScript [间接嵌套]
 struct MyStruct1 {
-    id:int,
-    next:MyStruct2
+    id: int,
+    next: MyStruct2
 }
 
 struct MyStruct2 {
-    id:int,
-    next:MyStruct1 // [!code error]
+    id: int,
+    next: MyStruct1 // [!code error]
 }
 ```
 :::
