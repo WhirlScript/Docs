@@ -166,6 +166,14 @@ WhirlScript defines three data types:
 - `int`: Integer, for example `0`, `42`, `1000`.
 - `string`: String, for example `"string"`.
 
+::: details Why no float?
+bat only provides integer operations. For compatibility, we can only discard this part.
+
+If you need to get several decimal places, multiply both the divisor and the dividend by 10 to the nth power, and then cut off the tail.
+
+The shell provides support for floating point numbers. If you need to use it, use it in the `lit` function.
+:::
+
 ### Conversion of Data Types
 
 WhirlScript is statically typed, which means that the type of a variable is immutable.
