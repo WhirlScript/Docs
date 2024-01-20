@@ -124,7 +124,13 @@ Macro functions are part of WhirlScript's preprocessing functionality, and they 
 
 ### Declaration
 
-The declaration of a macro function is similar to a regular function, you just need to replace the keyword `function` with `#function`.
+The declaration of a macro function is similar to a regular function, you just need to add keyword `macro`.
+
+```WhirlScript
+macro function fn(){
+  //...
+}
+```
 
 ### Inline
 
@@ -139,7 +145,7 @@ The passing of values in macro functions is by reference. This means that you ca
 For example, the following function will increment the passed value by `1`:
 
 ```whirlscript
-#function succ(var x: int) {
+macro function succ(var x: int) {
     x++;
 }
 
@@ -147,36 +153,6 @@ var x = 1;
 succ(x);
 println(x); //Outputs 2.
 ```
-
-### Constant Functions
-
-You can use the `constexpr` keyword to declare a macro function as a constant function.
-
-Constant functions need to return a value, and this value can be determined at compile time.
-
-For example, the following function will look like this after compilation:
-
-```whirlscript
-constexpr #function factorial(macro n:int):int {
-  if (n == 0 || n == 1) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
-}
-
-println(factorial(5));
-```
-
-::: code-group
-```bat
-echo 120
-```
-
-```sh
-echo 120
-```
-:::
 
 ### Recursive Limitations
 

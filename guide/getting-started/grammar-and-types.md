@@ -39,12 +39,34 @@ There are four states of quantities in WhirlScript:
 - Runtime variables: Can be modified and used at runtime;
 - Runtime constants: Can be used at runtime, cannot be modified.
 
-Correspondingly, there are four ways to declare:
+Runtime quantities can be declared with keywords `var` and `const`:
 
-- `#var`: Declare a compile-time variable, optionally initialize a value.
-- `#const`: Declare a compile-time constant.
 - `var`: Declare a runtime variable, optionally initialize a value.
 - `const`: Declare a runtime constant.
+
+::: code-group
+```WhirlScript [Runtime variables]
+var v:int = 1;
+```
+
+
+```WhirlScript [Runtime constants]
+const v:int = 1;
+```
+:::
+
+For compile-time quantities, you need to add keyword `macro`.
+
+::: code-group
+```WhirlScript [Compile-time variables]
+macro var v:int = 1;
+```
+
+
+```WhirlScript [Compile-time constants]
+macro const v:int = 1;
+```
+:::
 
 ### Variables
 

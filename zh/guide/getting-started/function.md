@@ -123,7 +123,13 @@ multiple(5); //返回 5。
 
 ### 声明
 
-宏函数的声明和普通函数类似，只需要把关键字 `function` 替换为 `#function` 就可以了。
+宏函数的声明和普通函数类似，只需要加上关键字 `macro` 。
+
+```WhirlScript
+macro function fn(){
+  //...
+}
+```
 
 ### 内联
 
@@ -138,7 +144,7 @@ multiple(5); //返回 5。
 例如，以下函数会将传入值自增 `1`：
 
 ```whirlscript
-#function succ(var x: int) {
+macro function succ(var x: int) {
     x++;
 }
 
@@ -146,36 +152,6 @@ var x = 1;
 succ(x);
 println(x); //输出 2。
 ```
-
-### 常值函数
-
-你可以使用 `constexpr` 关键字将一个宏函数声明为一个常值函数。
-
-常值函数需要返回一个值，且这个值是在编译期就可以被确定的。
-
-例如，以下函数会在编译后变成这样：
-
-```whirlscript
-constexpr #function factorial(macro n:int):int {
-  if (n == 0 || n == 1) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
-}
-
-println(factorial(5));
-```
-
-::: code-group
-```bat
-echo 120
-```
-
-```sh
-echo 120
-```
-:::
 
 ### 递归限制
 

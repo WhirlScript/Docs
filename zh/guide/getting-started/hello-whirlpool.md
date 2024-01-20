@@ -31,7 +31,7 @@ $ wrp add hello
 回到我们前面创建的 `main.wrs` 文件，改成：
 
 ```whirlscript
-#import "hello";
+import "hello";
 
 hello();
 ```

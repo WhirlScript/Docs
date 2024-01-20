@@ -39,12 +39,34 @@ WhirlScript 的量有四种状态：
 - 运行时变量：可以在运行时修改和使用；
 - 运行时常量：可以在运行时使用，不能被修改。
 
-对应的，有四种声明方式：
+运行时量可以直接使用关键字 `var` 和 `const` 声明：
 
-- `#var`：声明一个编译期变量，可选初始化一个值。
-- `#const`：声明一个编译期常量。
 - `var`：声明一个运行时变量，可选初始化一个值。
 - `const`：声明一个运行时常量。
+
+::: code-group
+```WhirlScript [运行时变量]
+var v:int = 1;
+```
+
+
+```WhirlScript [运行时常量]
+const v:int = 1;
+```
+:::
+
+对于编译期量，则需要添加 `macro` 关键字。
+
+::: code-group
+```WhirlScript [编译期变量]
+macro var v:int = 1;
+```
+
+
+```WhirlScript [编译期常量]
+macro const v:int = 1;
+```
+:::
 
 ### 变量
 

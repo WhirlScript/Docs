@@ -17,10 +17,10 @@ It's advisable to place all definitions within namespaces in files that act as m
 
 ## Importing Modules
 
-Use the `#import` statement to import a module.
+Use the `import` statement to import a module.
 
 ```WhirlScript
-#import "./module";
+import "./module";
 ```
 
 The imported module is actually a `.wrs` file. You need to use relative paths (starting with `./`) to import files in the project directory.
@@ -33,14 +33,14 @@ Repeated imports are safe. The second import of the same module will be ignored.
 
 ## Importing WhirlPKG Packages
 
-WhirlPKG provides a variety of third-party packages. You can install them to the current project with `$ wrp add $pkg`, and then use the `#import` statement to import:
+WhirlPKG provides a variety of third-party packages. You can install them to the current project with `$ wrp add $pkg`, and then use the `import` statement to import:
 
 ```WhirlScript
-#import "hello";
+import "hello";
 ```
 
 For packages that provide optional imports, you can import them in this way:
 
 ```WhirlScript
-#import "hello/hello";
+import "hello/hello";
 ```
