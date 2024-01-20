@@ -89,7 +89,7 @@ macro const v: int = 1;
 
 同时，使用关键字作为标识符的行为是未定义的。
 
-合法的标识符示例：`Number_hits`、`temp99`。
+合法的标识符示例：`NumberHits`、`temp99`。
 
 ### 声明变量
 

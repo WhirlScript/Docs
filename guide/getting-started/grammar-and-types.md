@@ -89,7 +89,7 @@ Note that these two symbols will be parsed as ordinary operators.
 
 At the same time, the behavior of using keywords as identifiers is undefined.
 
-Examples of legal identifiers: `Number_hits`, `temp99`.
+Examples of legal identifiers: `NumberHits`, `temp99`.
 
 ### Declaring Variables
 
