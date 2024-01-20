@@ -1,10 +1,10 @@
 ---
 prev:
-    text: 表达式与运算符
-    link: /zh/guide/getting-started/expressions-and-operators
+    text: 结构体
+    link: /zh/guide/getting-started/struct
 next:
-    text: 模块
-    link: /zh/guide/getting-started/modules
+    text: 目标限定符
+    link: /zh/guide/getting-started/target-specify
 ---
 
 # 命名空间

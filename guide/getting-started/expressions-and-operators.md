@@ -19,20 +19,20 @@ An **assignment operator** assigns the value of its right operand to its left op
 
 There are also some compound assignment operators, which are abbreviations for the operations listed in the table below:
 
-| Name                                  | Shorthand Operator | Meaning       |
-| ------------------------------------- | ------------------ | ------------ |
-| Assignment                            | `x = y`            | `x = y`      |
-| Addition assignment                   | `x += y`           | `x = x + y`  |
-| Subtraction assignment                | `x -= y`           | `x = x - y`  |
-| Multiplication assignment             | `x *= y`           | `x = x * y`  |
-| Division assignment                   | `x /= y`           | `x = x / y`  |
-| Remainder assignment                  | `x %= y`           | `x = x % y`  |
-| Exponentiation assignment             | `x **= y`          | `x = x ** y` |
-| Left shift assignment                 | `x <<= y`          | `x = x << y` |
-| Right shift assignment                | `x >>= y`          | `x = x >> y` |
-| Bitwise AND assignment                | `x &= y`           | `x = x & y`  |
-| Bitwise XOR assignment                | `x ^= y`           | `x = x ^ y`  |
-| Bitwise OR assignment                 | `x \|= y`          | `x = x \| y` |
+| Name                      | Shorthand Operator | Meaning      |
+| ------------------------- | ------------------ | ------------ |
+| Assignment                | `x = y`            | `x = y`      |
+| Addition assignment       | `x += y`           | `x = x + y`  |
+| Subtraction assignment    | `x -= y`           | `x = x - y`  |
+| Multiplication assignment | `x *= y`           | `x = x * y`  |
+| Division assignment       | `x /= y`           | `x = x / y`  |
+| Remainder assignment      | `x %= y`           | `x = x % y`  |
+| Exponentiation assignment | `x **= y`          | `x = x ** y` |
+| Left shift assignment     | `x <<= y`          | `x = x << y` |
+| Right shift assignment    | `x >>= y`          | `x = x >> y` |
+| Bitwise AND assignment    | `x &= y`           | `x = x & y`  |
+| Bitwise XOR assignment    | `x ^= y`           | `x = x ^ y`  |
+| Bitwise OR assignment     | `x \|= y`          | `x = x \| y` |
 
 ### Comparison Operators
 
@@ -43,14 +43,14 @@ var var1 = 3;
 var var2 = 4;
 ```
 
-| Operator                              | Description                                      | Example that returns true                     |
-| ------------------------------------- | ------------------------------------------------ | --------------------------------------------- |
-| Equal (`==`)                          | Returns true if both operands are equal.         | `3 == var1` `"3" == var1` `3 == '3'`          |
-| Not equal (`!=`)                      | Returns true if the operands are not equal.      | `var1 != 4` `var2 != "3"`                     |
-| Greater than (`>`)                    | Returns true if the left operand is greater than the right operand. | `var2 > var1` `"12" > 2`                      |
-| Greater than or equal (`>=`)          | Returns true if the left operand is greater than or equal to the right operand. | `var2 >= var1` `var1 >= 3`                    |
-| Less than (`<`)                       | Returns true if the left operand is less than the right operand. | `var1 < var2` `"2" < 12`                      |
-| Less than or equal (`<=`)             | Returns true if the left operand is less than or equal to the right operand. | `var1 <= var2` `var2 <= 5`                    |
+| Operator                     | Description                                                                     | Example that returns true            |
+| ---------------------------- | ------------------------------------------------------------------------------- | ------------------------------------ |
+| Equal (`==`)                 | Returns true if both operands are equal.                                        | `3 == var1` `"3" == var1` `3 == '3'` |
+| Not equal (`!=`)             | Returns true if the operands are not equal.                                     | `var1 != 4` `var2 != "3"`            |
+| Greater than (`>`)           | Returns true if the left operand is greater than the right operand.             | `var2 > var1` `"12" > 2`             |
+| Greater than or equal (`>=`) | Returns true if the left operand is greater than or equal to the right operand. | `var2 >= var1` `var1 >= 3`           |
+| Less than (`<`)              | Returns true if the left operand is less than the right operand.                | `var1 < var2` `"2" < 12`             |
+| Less than or equal (`<=`)    | Returns true if the left operand is less than or equal to the right operand.    | `var1 <= var2` `var2 <= 5`           |
 
 ### Arithmetic Operators
 
@@ -64,14 +64,14 @@ WhirlScript does not provide a floating-point type. This means that you can't ge
 
 In addition to the standard arithmetic operators, WhirlScript also provides the arithmetic operators listed in the table below.
 
-| Operator             | Description                                                                                                                                             | Example                                                                                              |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Remainder (`%`)      | Binary operator. Returns the remainder after division.                                                                                                  | 12 % 5 returns 2.                                                                                    |
-| Increment (`++`)     | Unary operator. Adds one to the operand. If it is placed before the operand (`++x`), it returns the value after addition; if it is placed after the operand (`x++`), it returns the original value of the operand and then adds one to the operand. | `var x=3;` `println(++x); //4` `println(x); //4` `var y=3;` `println(y++); //3` `println(y); //4` |
-| Decrement (`--`)     | Unary operator. Subtracts one from the operand. The return value of the prefix and suffix usage is similar to the increment operator.                                                                          | `var x=3;` `println(--x); //2` `var y=3;` `println(y--); //3`                                       |
-| Unary negative (`-`) | Unary operator, returns the negative value of the operand.                                                                                              | `var x=3;` `println(-x); //-3`                                                                       |
-| Unary positive (`+`) | Unary operator, if the operand is not a number before, try to convert it to a number.                                                                    | `println( +'3' ); // 3` `println( '3' ); // '3'` `println(+true); // 1`                              |
-| Exponentiation (`**`)| Calculates the base (`base`) to the power of the exponent (`exponent`), represented as `base^exponent`.                                                  | `2 ** 3` returns `8`. `10 ** -1` returns `0.1`.                                                      |
+| Operator              | Description                                                                                                                                                                                                                                         | Example                                                                                           |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Remainder (`%`)       | Binary operator. Returns the remainder after division.                                                                                                                                                                                              | 12 % 5 returns 2.                                                                                 |
+| Increment (`++`)      | Unary operator. Adds one to the operand. If it is placed before the operand (`++x`), it returns the value after addition; if it is placed after the operand (`x++`), it returns the original value of the operand and then adds one to the operand. | `var x=3;` `println(++x); //4` `println(x); //4` `var y=3;` `println(y++); //3` `println(y); //4` |
+| Decrement (`--`)      | Unary operator. Subtracts one from the operand. The return value of the prefix and suffix usage is similar to the increment operator.                                                                                                               | `var x=3;` `println(--x); //2` `var y=3;` `println(y--); //3`                                     |
+| Unary negative (`-`)  | Unary operator, returns the negative value of the operand.                                                                                                                                                                                          | `var x=3;` `println(-x); //-3`                                                                    |
+| Unary positive (`+`)  | Unary operator, if the operand is not a number before, try to convert it to a number.                                                                                                                                                               | `println( +'3' ); // 3` `println( '3' ); // '3'` `println(+true); // 1`                           |
+| Exponentiation (`**`) | Calculates the base (`base`) to the power of the exponent (`exponent`), represented as `base^exponent`.                                                                                                                                             | `2 ** 3` returns `8`. `10 ** -1` returns `0.1`.                                                   |
 
 ### Bitwise Operators
 
@@ -83,15 +83,15 @@ Bitwise operators treat their operands as a sequence of 32 bits (zeroes and ones
 
 The following table summarizes the bitwise operators in WhirlScript.
 
-| Operator                           | Usage    | Description                                                                                                               |
-| ---------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Bitwise AND                        | `a & b`  | For each bit in the binary representation of the operands, the result in the same position is 1 if the corresponding bits of both operands is 1. Otherwise, the result is 0. |
-| Bitwise OR                         | `a \| b` | For each bit in the binary representation of the operands, the result in the same position is 1 if the corresponding bit of either or both operands is 1. Otherwise, the result is 0. |
-| Bitwise XOR                        | `a ^ b`  | For each bit in the binary representation of the operands, the result in the same position is 1 if the corresponding bits of the operands are different. Otherwise, the result is 0. |
-| Bitwise NOT                        | `~ a`    | Inverts the bits of its operand.                                                                                           |
-| Left shift                         | `a << b` | Shifts a in binary representation b bits to the left, shifting in 0s from the right.                                      |
-| Sign-propagating right shift       | `a >> b` | Shifts a in binary representation b bits to the right, discarding bits shifted off.                                        |
-| Zero-fill right shift (fills with 0s on the left) | `a >>> b` | Shifts a in binary representation b bits to the right, discarding bits shifted off, and shifting in 0s from the left. |
+| Operator                                          | Usage     | Description                                                                                                                                                                           |
+| ------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bitwise AND                                       | `a & b`   | For each bit in the binary representation of the operands, the result in the same position is 1 if the corresponding bits of both operands is 1. Otherwise, the result is 0.          |
+| Bitwise OR                                        | `a \| b`  | For each bit in the binary representation of the operands, the result in the same position is 1 if the corresponding bit of either or both operands is 1. Otherwise, the result is 0. |
+| Bitwise XOR                                       | `a ^ b`   | For each bit in the binary representation of the operands, the result in the same position is 1 if the corresponding bits of the operands are different. Otherwise, the result is 0.  |
+| Bitwise NOT                                       | `~ a`     | Inverts the bits of its operand.                                                                                                                                                      |
+| Left shift                                        | `a << b`  | Shifts a in binary representation b bits to the left, shifting in 0s from the right.                                                                                                  |
+| Sign-propagating right shift                      | `a >> b`  | Shifts a in binary representation b bits to the right, discarding bits shifted off.                                                                                                   |
+| Zero-fill right shift (fills with 0s on the left) | `a >>> b` | Shifts a in binary representation b bits to the right, discarding bits shifted off, and shifting in 0s from the left.                                                                 |
 
 #### Bitwise Logical Operators
 
@@ -109,13 +109,13 @@ Conceptually, bitwise logical operators work as follows:
 
 For example, the binary representation of the decimal number 9 is 1001, and the binary representation of the decimal number 15 is 1111. Therefore, when the bitwise operator is applied to these two values, the result is as follows:
 
-| Expression | Result | Binary Description                                       |
-| ---------- | ------ | -------------------------------------------------------- |
-| `15 & 9`   | `9`    | `1111 & 1001 = 1001`                                     |
-| `15 \| 9`  | `15`   | `1111 \| 1001 = 1111`                                    |
-| `15 ^ 9`   | `6`    | `1111 ^ 1001 = 0110`                                     |
-| `~15`      | `-16`  | `~ 0000 0000 … 0000 1111 = 1111 1111 … 1111 0000`        |
-| `~9`       | `-10`  | `~ 0000 0000 … 0000 1001 = 1111 1111 … 1111 0110`        |
+| Expression | Result | Binary Description                                |
+| ---------- | ------ | ------------------------------------------------- |
+| `15 & 9`   | `9`    | `1111 & 1001 = 1001`                              |
+| `15 \| 9`  | `15`   | `1111 \| 1001 = 1111`                             |
+| `15 ^ 9`   | `6`    | `1111 ^ 1001 = 0110`                              |
+| `~15`      | `-16`  | `~ 0000 0000 … 0000 1111 = 1111 1111 … 1111 0000` |
+| `~9`       | `-10`  | `~ 0000 0000 … 0000 1001 = 1111 1111 … 1111 0110` |
 
 Note that the bitwise "not" operator inverts all 32 bits, and if the highest bit (the leftmost bit) is 1, it represents a negative number (2's complement representation).
 
@@ -127,20 +127,20 @@ Shift operators convert their operands into 32-bit integers and return a value o
 
 The list of shift operators is as follows.
 
-| Operator             | Description                                                                                                  | Example                                                                                           |
-| -------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `<<` (Left shift)    | Shifts the first operand to the left by the number of bits specified by the second operand. Bits shifted off to the left are discarded. Zero bits are shifted in from the right. | `9<<2` produces 36, because 1001 shifted 2 bits to the left becomes 100100, which is 36.          |
-| `>>` (Right shift)   | Shifts the first operand to the right by the number of bits specified by the second operand. Bits shifted off to the right are discarded. If the first operand is positive, 0 is shifted in from the left. If the first operand is negative, 1 is shifted in from the left. | `9>>2` produces 2, because 1001 shifted 2 bits to the right becomes 10, which is 2.               |
+| Operator           | Description                                                                                                                                                                                                                                                                 | Example                                                                                  |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `<<` (Left shift)  | Shifts the first operand to the left by the number of bits specified by the second operand. Bits shifted off to the left are discarded. Zero bits are shifted in from the right.                                                                                            | `9<<2` produces 36, because 1001 shifted 2 bits to the left becomes 100100, which is 36. |
+| `>>` (Right shift) | Shifts the first operand to the right by the number of bits specified by the second operand. Bits shifted off to the right are discarded. If the first operand is positive, 0 is shifted in from the left. If the first operand is negative, 1 is shifted in from the left. | `9>>2` produces 2, because 1001 shifted 2 bits to the right becomes 10, which is 2.      |
 
 ### Logical Operators
 
 Logical operators are commonly used between boolean (logical) values; when the operands are boolean values, the return value is also a boolean value. However, in reality, `&&` and `||` return a specific operand's value, so when it is used for non-boolean values, the return value may be non-boolean. The description of logical operators is as follows.
 
-| Operator | Example | Description |
-| --- | --- | --- |
-| Logical AND (`&&`) | `expr1 && expr2` | If `expr1` can be converted to false, then `expr1` is returned; otherwise, `expr2` is returned. Therefore, when `&&` is used for boolean values, it returns true when all operands are true; otherwise, it returns false. |
+| Operator            | Example            | Description                                                                                                                                                                                                                              |
+| ------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Logical AND (`&&`)  | `expr1 && expr2`   | If `expr1` can be converted to false, then `expr1` is returned; otherwise, `expr2` is returned. Therefore, when `&&` is used for boolean values, it returns true when all operands are true; otherwise, it returns false.                |
 | Logical OR (`\|\|`) | `expr1 \|\| expr2` | If `expr1` can be converted to true, then `expr1` is returned; otherwise, `expr2` is returned. Therefore, when `\|\|` is used for boolean values, it returns true when any operand is true; if all operands are false, it returns false. |
-| Logical NOT (`!`) | `!expr` | If the operand can be converted to true, it returns false; otherwise, it returns true. |
+| Logical NOT (`!`)   | `!expr`            | If the operand can be converted to true, it returns false; otherwise, it returns true.                                                                                                                                                   |
 
 Here are examples of the `&&` (logical "AND") operator.
 
@@ -218,20 +218,20 @@ Operator precedence is used to determine the calculation order of an expression.
 
 The table below lists the precedence of descriptors, from highest to lowest.
 
-| Type | Operator |
-| --- | --- |
-| Call | `()` |
-| Increment/Decrement | `++` `--` |
-| Not | `!` |
-| Multiply/Divide | `*` `/` `%` |
-| Add/Subtract | `+` `-` |
-| Shift | `<< >> >>>` |
-| Size Comparison | `<` `<=` `>` `>=` |
-| Equality Judgment | `==` `!=` |
-| Logical AND | `&&` |
-| Logical OR | `\|\|` |
-| Conditional Judgment | `?:` |
-| Assignment | `=` `+=` `-=` `*=` `/=` `%=` |
+| Type                 | Operator                     |
+| -------------------- | ---------------------------- |
+| Call                 | `.` `()`                     |
+| Increment/Decrement  | `++` `--`                    |
+| Not                  | `!`                          |
+| Multiply/Divide      | `*` `/` `%`                  |
+| Add/Subtract         | `+` `-`                      |
+| Shift                | `<< >> >>>`                  |
+| Size Comparison      | `<` `<=` `>` `>=`            |
+| Equality Judgment    | `==` `!=`                    |
+| Logical AND          | `&&`                         |
+| Logical OR           | `\|\|`                       |
+| Conditional Judgment | `?:`                         |
+| Assignment           | `=` `+=` `-=` `*=` `/=` `%=` |
 
 ## Expressions
 

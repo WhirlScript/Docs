@@ -3,8 +3,8 @@ prev:
     text: 函数
     link: /zh/guide/getting-started/function
 next:
-    text: 命名空间
-    link: /zh/guide/getting-started/namespace
+    text: 结构体
+    link: /zh/guide/getting-started/struct
 ---
 
 # 表达式与运算符
@@ -220,7 +220,7 @@ var status = age >= 18 ? "adult" : "minor";
 
 | 类型      | 操作符                       |
 | --------- | ---------------------------- |
-| 调用      | `()`                         |
+| 调用      | `.` `()`                         |
 | 自增/自减 | `++` `--`                    |
 | 非        | `!`                          |
 | 乘/除     | `*` `/` `%`                  |

@@ -162,7 +162,7 @@ const version = "1.1.0";
 
 ### 数据类型
 
-WhirlScript 定义了三种数据类型：
+WhirlScript 定义了三种基本数据类型：
 
 - `boolean`：布尔值，有 2 个值分别是：`true` 和 `false`。
 - `int`：整数，例如 `0`、`42`、`1000`。

@@ -100,12 +100,12 @@ const sidebarItem = {
                     link: "/guide/getting-started/expressions-and-operators"
                 },
                 {
-                    text: "命名空间",
-                    link: "/guide/getting-started/namespace"
+                    text: "结构体",
+                    link: "/guide/getting-started/struct"
                 },
                 {
-                    text: "模块",
-                    link: "/guide/getting-started/modules"
+                    text: "命名空间",
+                    link: "/guide/getting-started/namespace"
                 },
                 {
                     text: "目标限定",
@@ -114,6 +114,10 @@ const sidebarItem = {
                 {
                     text: "注解",
                     link: "/guide/getting-started/annotation"
+                },
+                {
+                    text: "模块",
+                    link: "/guide/getting-started/modules"
                 }
             ]
         };

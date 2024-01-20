@@ -1,7 +1,7 @@
 ---
 prev:
-    text: 模块
-    link: /zh/guide/getting-started/modules
+    text: 命名空间
+    link: /zh/guide/getting-started/namespace
 next:
     text: 注解
     link: /zh/guide/getting-started/annotation
