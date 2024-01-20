@@ -157,3 +157,13 @@ println(x); //Outputs 2.
 ### Recursive Limitations
 
 Except for constant functions, macro functions cannot use recursion.
+
+### Native Function
+
+With annotation `@native`, macro function can be declared as a native function.
+
+Declaring a native function does not require a function body. It should be noted that a semicolon is required at the end of the sentence.
+
+```WhirlScript
+@native macro function fn();
+```
