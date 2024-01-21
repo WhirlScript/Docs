@@ -220,7 +220,7 @@ The table below lists the precedence of descriptors, from highest to lowest.
 
 | Type                 | Operator                     |
 | -------------------- | ---------------------------- |
-| Call                 | `.` `()`                     |
+| Call                 | `.` `::` `()`                |
 | Increment/Decrement  | `++` `--`                    |
 | Not                  | `!`                          |
 | Multiply/Divide      | `*` `/` `%`                  |
