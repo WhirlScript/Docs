@@ -159,10 +159,10 @@ println(x); //输出 2。
 
 ### 原生函数
 
-宏函数可以通过注解 `@native` 被声明为原生函数。
+宏函数可以通过关键字 `native` 被声明为原生函数。
 
 声明原生函数不需要函数体。需要注意的是，句末需要加上分号。
 
 ```WhirlScript
-@native macro function fn();
+native macro function fn();
 ```
