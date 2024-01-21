@@ -225,7 +225,7 @@ The table below lists the precedence of descriptors, from highest to lowest.
 | Not                  | `!`                          |
 | Multiply/Divide      | `*` `/` `%`                  |
 | Add/Subtract         | `+` `-`                      |
-| Shift                | `<< >> >>>`                  |
+| Shift                | `<<` `>>` `>>>`              |
 | Size Comparison      | `<` `<=` `>` `>=`            |
 | Equality Judgment    | `==` `!=`                    |
 | Logical AND          | `&&`                         |
