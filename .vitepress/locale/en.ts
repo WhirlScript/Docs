@@ -34,7 +34,7 @@ export function nav(): DefaultTheme.NavItem[] {
 export function sidebar(): DefaultTheme.SidebarMulti {
     return {
         "/guide/": {
-            base: "/",
+            base: "",
             items: [
                 sidebarItem.introduction(false),
                 sidebarItem.gettingStarted(false)
