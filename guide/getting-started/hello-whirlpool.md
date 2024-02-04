@@ -6,9 +6,9 @@ next:
   text: Grammar and Data Types
   link: /guide/getting-started/grammar-and-types
 ---
-# Hello WhirlPKG!
+# Hello Whirlpkg!
 
-Next, let's learn about the package manager `WhirlPKG`.
+Next, let's learn about the package manager `Whirlpkg`.
 
 ## Installing Packages
 

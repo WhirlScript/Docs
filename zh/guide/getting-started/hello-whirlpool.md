@@ -6,9 +6,9 @@ next:
     text: 语法和数据类型
     link: /zh/guide/getting-started/grammar-and-types
 ---
-# Hello WhirlPKG!
+# Hello Whirlpkg!
 
-接下来让我们了解下包管理器 `WhirlPKG`。
+接下来让我们了解下包管理器 `Whirlpkg`。
 
 ## 安装包
 

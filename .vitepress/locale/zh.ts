@@ -80,7 +80,7 @@ const sidebarItem = {
                     link: "/guide/getting-started/hello-world"
                 },
                 {
-                    text: "Hello WhirlPKG!",
+                    text: "Hello Whirlpkg!",
                     link: "/guide/getting-started/hello-whirlpkg"
                 },
                 {

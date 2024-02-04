@@ -36,7 +36,7 @@ features:
     details: Write one code, compiles to all platform's script.
   - icon: 📦
     title: Work with Package Manager
-    details: Work together with WhirlPKG packages. It's easy to find and get wheels. 
+    details: Work together with Whirlpkg packages. It's easy to find and get wheels. 
 ---
 
 <style>

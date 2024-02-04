@@ -31,9 +31,9 @@ Importing is essentially a simple string concatenation. Therefore, all content i
 
 Repeated imports are safe. The second import of the same module will be ignored.
 
-## Importing WhirlPKG Packages
+## Importing Whirlpkg Packages
 
-WhirlPKG provides a variety of third-party packages. You can install them to the current project with `$ wrp add $pkg`, and then use the `import` statement to import:
+Whirlpkg provides a variety of third-party packages. You can install them to the current project with `$ wrp add $pkg`, and then use the `import` statement to import:
 
 ```WhirlScript
 import "hello";

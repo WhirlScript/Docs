@@ -33,7 +33,7 @@ $ yarn global add whirlscript
 
 ### Setup Guide
 
-WhirlScript uses its package manager `WhirlPKG`.
+WhirlScript uses its package manager `Whirlpkg`.
 
 ```shell
 $ wrp init

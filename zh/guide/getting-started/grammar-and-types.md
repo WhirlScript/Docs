@@ -1,6 +1,6 @@
 ---
 prev:
-    text: Hello WhirlPKG!
+    text: Hello Whirlpkg!
     link: /zh/guide/getting-started/hello-whirlpkg
 next: 
     text: 流程控制

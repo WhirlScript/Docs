@@ -3,7 +3,7 @@ prev:
     text: 立即开始
     link: /zh/guide/getting-started/getting-started
 next: 
-    text: Hello WhirlPKG!
+    text: Hello Whirlpkg!
     link: /zh/guide/getting-started/hello-whirlpkg
 ---
 # Hello World!

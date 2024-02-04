@@ -65,7 +65,7 @@ const sidebarItem = {
                 { text: "Getting Started", link: "/guide/getting-started/getting-started" },
                 { text: "Hello World!", link: "/guide/getting-started/hello-world" },
                 {
-                    text: "Hello WhirlPKG!",
+                    text: "Hello Whirlpkg!",
                     link: "/guide/getting-started/hello-whirlpkg"
                 },
                 {

@@ -33,7 +33,7 @@ import "./module";
 
 ## 导入 Whirl 包
 
-WhirlPKG 提供了各种第三方包。你可以通过 `$ wrp add $pkg` 安装到当前项目，然后使用 `import` 语句导入：
+Whirlpkg 提供了各种第三方包。你可以通过 `$ wrp add $pkg` 安装到当前项目，然后使用 `import` 语句导入：
 
 ```WhirlScript
 import "hello";
