@@ -164,5 +164,5 @@ println(x); //输出 2。
 声明原生函数不需要函数体。需要注意的是，句末需要加上分号。
 
 ```WhirlScript
-native macro function fn();
+native function fn();
 ```
