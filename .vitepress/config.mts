@@ -6,6 +6,12 @@ import { sidebar as sidebarZh } from "./locale/zh";
 import * as path from "path";
 
 export default defineConfig({
+    rewrites: {
+        "index.md": "index.md",
+        ":file(.*)/index.md": ":file/index.md",
+        ":file(.*).md": ":file/index.md"
+    },
+
     locales: {
         root: {
             label: "English",
@@ -51,13 +57,18 @@ export default defineConfig({
 
     markdown: {
         math: true,
-        languages: [{
-            id: "whirlscript",
-            scopeName: "source.whirlscript",
-            displayName: "WhirlScript",
-            aliases: ["wrs"],
-            path: path.resolve(__dirname, "extension/languages/whirlscript.tmLanguage.json")
-        }]
+        languages: [
+            {
+                id: "whirlscript",
+                scopeName: "source.whirlscript",
+                displayName: "WhirlScript",
+                aliases: ["wrs"],
+                path: path.resolve(
+                    __dirname,
+                    "extension/languages/whirlscript.tmLanguage.json"
+                )
+            }
+        ]
     },
 
     sitemap: {
