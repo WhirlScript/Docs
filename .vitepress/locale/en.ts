@@ -75,6 +75,34 @@ const sidebarItem = {
                 {
                     text: "Control Flow",
                     link: "/guide/getting-started/control-flow"
+                },
+                {
+                    text: "Function",
+                    link: "/guide/getting-started/function"
+                },
+                {
+                    text: "Expressions and Operators",
+                    link: "/guide/getting-started/expressions-and-operators"
+                },
+                {
+                    text: "Struct",
+                    link: "/guide/getting-started/struct"
+                },
+                {
+                    text: "Namespace",
+                    link: "/guide/getting-started/namespace"
+                },
+                {
+                    text: "Target Specification",
+                    link: "/guide/getting-started/target-specify"
+                },
+                {
+                    text: "Annotation",
+                    link: "/guide/getting-started/annotation"
+                },
+                {
+                    text: "Modules",
+                    link: "/guide/getting-started/modules"
                 }
             ]
         };

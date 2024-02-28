@@ -1,8 +1,6 @@
 import { defineConfig } from "vitepress";
-import { nav as navEn } from "./locale/en";
-import { nav as navZh } from "./locale/zh";
-import { sidebar as sidebarEn } from "./locale/en";
-import { sidebar as sidebarZh } from "./locale/zh";
+import { nav as navEn, sidebar as sidebarEn } from "./locale/en";
+import { nav as navZh, sidebar as sidebarZh } from "./locale/zh";
 import * as path from "path";
 
 export default defineConfig({
