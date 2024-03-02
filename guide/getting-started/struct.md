@@ -1,7 +1,7 @@
 ---
 prev:
-    text: Expressions and Operators
-    link: /en/guide/getting-started/expressions-and-operators
+    text: Template String
+    link: /guide/getting-started/template-string
 next:
     text: Namespace
     link: /en/guide/getting-started/namespace
@@ -28,14 +28,14 @@ Struct do not allow self-nesting, including direct and indirect nesting. For exa
 
 ::: code-group
 
-```Whirlscript [Direct nesting]
+```WhirlScript [Direct nesting]
 struct MyStruct {
     id: int,
     next: MyStruct // [!code error]
 }
 ```
 
-```Whirlscript [Indirect nesting]
+```WhirlScript [Indirect nesting]
 struct MyStruct1 {
     id: int,
     next: MyStruct2

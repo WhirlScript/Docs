@@ -3,8 +3,8 @@ prev:
     text: Function
     link: /guide/getting-started/function
 next:
-    text: Namespace
-    link: /guide/getting-started/namespace
+    text: Template String
+    link: /guide/getting-started/template-string
 ---
 
 # Expressions and Operators

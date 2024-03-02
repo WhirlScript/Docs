@@ -3,8 +3,8 @@ prev:
     text: 函数
     link: /zh/guide/getting-started/function
 next:
-    text: 结构体
-    link: /zh/guide/getting-started/struct
+    text: 模板字符串
+    link: /zh/guide/getting-started/template-string
 ---
 
 # 表达式与运算符

@@ -1,7 +1,7 @@
 ---
 prev:
-    text: 表达式与运算符
-    link: /zh/guide/getting-started/expressions-and-operators
+    text: 模板字符串
+    link: /zh/guide/getting-started/template-string
 next:
     text: 命名空间
     link: /zh/guide/getting-started/namespace
