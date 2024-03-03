@@ -133,11 +133,11 @@ var aString: string = aNum;  // 得到 "1"。
 ```whirlscript
 @final var g: string = "这是一个最终变量"; // 声明一个最终变量
 
-bat rawln("echo %g%");  // 在 bat 中输出 g。
-sh rawln("echo $g");    // 在 sh 中输出 g。
+bat raw("echo %g%\n");  // 在 bat 中输出 g。
+sh raw("echo $g\n");    // 在 sh 中输出 g。
 
 // 更推荐的写法
-rawln(`echo ${g}`);   // 这不需要判断语法环境，可以直接调用。
+raw(`echo ${g}\n`);   // 这不需要判断语法环境，可以直接调用。
 
 // 或者直接
 println(g); 内置的 println 函数。
@@ -173,7 +173,7 @@ bat 只提供整数的运算。为了兼容，我们只能舍弃这一部分。
 
 如果您需要得到几位小数，请将除数和被除数同时乘上 10 的 n 次方后，截取尾部。
 
-shell 提供了对浮点数的支持。如果您需要使用，请在 `lit` 函数中使用。
+shell 提供了对浮点数的支持。如果您需要使用，请在 `exec` 函数中使用。
 :::
 
 ### 数据类型的转换

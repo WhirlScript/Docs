@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: Whirlscript
+title: WhirlScript
 titleTemplate: 下一代脚本语言
 
 hero:
-  name: Whirlscript
+  name: WhirlScript
   text: |
     下一代语言
     为脚本而生

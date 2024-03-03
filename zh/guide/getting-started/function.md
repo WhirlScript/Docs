@@ -39,8 +39,7 @@ function add(x: int, y: int): int {
 
 对于参数列表中的每一项，声明都由以下部分组成：
 
-- 常变量限定，使用 `var` 和 `const` 关键字，可省。
-- 运行时、编译期变量限定，使用 `runtime` 和 `macro` 关键字，可省。
+- 运行时、编译期变量限定，使用 `macro` 关键字，可省。
 - 名称。
 - 参数类型。
 
@@ -51,7 +50,7 @@ function add(x: int, y: int): int {
 比如，这个函数接受一个宏变量：
 
 ```whirlscript
-function f(var macro x: int): int {
+function f(macro x: int): int {
     // ...
 }
 ```

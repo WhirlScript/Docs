@@ -40,8 +40,7 @@ For functions without a return value, you can either not declare a return type o
 
 For each item in the parameter list, the declaration consists of the following parts:
 
-- Constant variable qualifier, using the `var` and `const` keywords, can be omitted.
-- Runtime, compile-time variable qualifier, using the `runtime` and `macro` keywords, can be omitted.
+- Runtime, compile-time variable qualifier, using the `macro` keywords, can be omitted.
 - Name.
 - Parameter type.
 
@@ -52,7 +51,7 @@ Literal values are also compile-time constants.
 For example, this function accepts a macro variable:
 
 ```whirlscript
-function f(var macro x: int): int {
+function f(macro x: int): int {
     // ...
 }
 ```

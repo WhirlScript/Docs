@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: Whirlscript
+title: WhirlScript
 titleTemplate: A next generation script language
 
 hero:
-  name: Whirlscript
+  name: WhirlScript
   text: |
     Next generation
     Language for script

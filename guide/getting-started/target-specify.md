@@ -20,7 +20,7 @@ The simplest way is to add `@sh` or `@bat` annotations before the statement.
 
 For blocks of statements, you can specify them like this:
 
-```Whirlscript
+```WhirlScript
 @sh {
     println("SH only block.");
 }

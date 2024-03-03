@@ -50,7 +50,7 @@ const sidebarItem = {
             collapsed,
             items: [
                 {
-                    text: "What is Whirlscript?",
+                    text: "What is WhirlScript?",
                     link: "/guide/introduction/what-is-whirlscript"
                 }
             ]
@@ -83,6 +83,10 @@ const sidebarItem = {
                 {
                     text: "Expressions and Operators",
                     link: "/guide/getting-started/expressions-and-operators"
+                },
+                {
+                    text: "Template String",
+                    link: "/guide/getting-started/template-string"
                 },
                 {
                     text: "Struct",

@@ -59,7 +59,7 @@ const sidebarItem = {
             collapsed,
             items: [
                 {
-                    text: "什么是 Whirlscript？",
+                    text: "什么是 WhirlScript？",
                     link: "/guide/introduction/what-is-whirlscript"
                 }
             ]
@@ -98,6 +98,10 @@ const sidebarItem = {
                 {
                     text: "表达式与运算符",
                     link: "/guide/getting-started/expressions-and-operators"
+                },
+                {
+                    text: "模板字符串",
+                    link: "/guide/getting-started/template-string"
                 },
                 {
                     text: "结构体",

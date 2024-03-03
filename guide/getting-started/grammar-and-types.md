@@ -131,11 +131,11 @@ You can use the `@final` annotation to declare a final quantity or a function:
 You can only declare a runtime quantity as a final quantity. The same as function.
 :::
 
-bat rawln("echo %g%");  // Output g in bat.
-sh rawln("echo $g");    // Output g in sh.
+bat raw("echo %g%\n");  // Output g in bat.
+sh raw("echo $g\n");    // Output g in sh.
 
 // More recommended writing
-rawln(`echo ${g}`);   // This does not need to judge the syntax environment, it can be called directly.
+raw(`echo ${g}\n`);   // This does not need to judge the syntax environment, it can be called directly.
 
 // Or directly
 println(g); The built-in println function.
@@ -171,7 +171,7 @@ bat only provides integer operations. For compatibility, we can only discard thi
 
 If you need to get several decimal places, multiply both the divisor and the dividend by 10 to the nth power, and then cut off the tail.
 
-The shell provides support for floating point numbers. If you need to use it, use it in the `lit` function.
+The shell provides support for floating point numbers. If you need to use it, use it in the `exec` function.
 :::
 
 ### Conversion of Data Types
