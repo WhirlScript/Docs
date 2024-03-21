@@ -2,9 +2,9 @@
 prev:
     text: 注解
     link: /zh/guide/getting-started/annotation
-next: false
-    # text: 模块
-    # link: /zh/guide/getting-started/modules
+next:
+    text: 运行命令
+    link: /zh/guide/getting-started/execute
 ---
 
 # 模块

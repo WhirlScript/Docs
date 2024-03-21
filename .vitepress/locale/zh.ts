@@ -122,6 +122,10 @@ const sidebarItem = {
                 {
                     text: "模块",
                     link: "/guide/getting-started/modules"
+                },
+                {
+                    text: "运行命令",
+                    link: "/guide/getting-started/execute"
                 }
             ]
         };
